@@ -1,7 +1,7 @@
 body {
  display: grid;
- grid-template-columns: 1fr 3fr 1fr;
- grid-template-areas: "nav die alert";
+ grid-template-columns: 1fr 2fr 1fr;
+ grid-template-areas: "nav die blank";
  justify-content: center;
  align-items: center; 
  font-family: 'Bree Serif', serif;
@@ -11,23 +11,37 @@ body {
 
 #nav {
     grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
 }
 
-#alert {
-    grid-area: alert;
+#list {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.blank {
+    grid-area: blank;
 }
 
 #die {
     grid-area: die;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
 }
 
 #die>img {
+    margin-top: 5%;
     position: relative;
+    height: 55%;
 }
 
 #result {
