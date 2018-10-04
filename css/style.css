@@ -1,45 +1,45 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-    font-family: 'Bree Serif', serif;
-    font-size: 25px;
-   }
-   
-   #d20 {
-       position: relative;
-   }
-   
-   #result {
-       position: absolute;
-       top: 50%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       font-size: 250%;
-   }
-   
-   img {
-       padding: 15px;
-   }
-   
-   button { 
-       background-color: black;
-       color: white;
-       border: none;
-       padding: 15px;
-   }
-   
-   button:hover {
-       transition: .15s font-size ease;
-       font-size: 115%;
-   }
-   
-   #contact {
-       color: black;
-   }
-   
-   a:hover {
-       transition: .15s font-size ease;
-       font-size: 125%;
-   }
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+ flex-direction: column;
+ font-family: 'Bree Serif', serif;
+ font-size: 25px;
+}
+
+#d20 {
+    position: relative;
+}
+
+#result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250%;
+}
+
+img {
+    padding: 15px;
+}
+
+button { 
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px;
+}
+
+button:hover {
+    transition: .15s font-size ease;
+    font-size: 115%;
+}
+
+#contact {
+    color: black;
+}
+
+a:hover {
+    transition: .15s font-size ease;
+    font-size: 125%;
+}
