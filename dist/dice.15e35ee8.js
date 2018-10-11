@@ -104,22 +104,52 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-function result() {
-    var result = document.getElementById("result").innerHTML = Math.floor(Math.random() * 20) + 1;
-    if (result === 20) {
-        setTimeout(function () {
-            alert('✨✨Critical success!!!✨✨');
-        }, 05);
-    }
+//D20 Function
+var side = 4;
+var percentile = false;
 
-    if (result === 1) {
-        setTimeout(function () {
-            alert('⚠️💀Critical fail!!!💀⚠️️');
-        }, 05);
-    }
+function roll() {
+    console.log(percentile);
+
+    var percent = percentile === 'true' ? '%' : '';
+
+    // var result =           
+    document.getElementById("result").innerHTML = Math.floor(Math.random() * side) + 1 + percent;
+
+    /* if ( result === 20 ) {
+         setTimeout(() => {
+             alert('✨✨Critical success!!!✨✨')
+         }, 05)
+     }
+       if ( result === 1 ) {
+         setTimeout(() => { 
+             alert('⚠️💀Critical fail!!!💀⚠️️')    
+             }, 05);
+         }
+     */
 }
 
-document.getElementById("roll").addEventListener('click', result);
+document.getElementById("roll").addEventListener('click', roll);
+document.querySelectorAll('.die').forEach(function (die) {
+    return die.addEventListener('click', function (event) {
+        console.log(event, percentile);
+        side = event.target.attributes.value.value;
+        percentile = event.target.attributes[2].value;
+    });
+});
+
+//D12 Function
+
+
+//D10 Function
+
+//D% Function
+
+//D8 Function
+
+//D6 Function
+
+//D4 Function
 },{}],"..\\..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -149,7 +179,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '60269' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49506' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
