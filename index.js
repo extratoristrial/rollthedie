@@ -29,7 +29,7 @@ function roll() {
     document.querySelectorAll('.die').forEach(die => die.addEventListener('click', (event)=> {
         console.log(event, percentile)
         side = event.target.attributes.value.value
-        percentile = event.target.attributes[2].value
+        percentile = event.target.attributes[3].value
     }))
 
 //D12 Function

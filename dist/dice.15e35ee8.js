@@ -134,7 +134,7 @@ document.querySelectorAll('.die').forEach(function (die) {
     return die.addEventListener('click', function (event) {
         console.log(event, percentile);
         side = event.target.attributes.value.value;
-        percentile = event.target.attributes[2].value;
+        percentile = event.target.attributes[3].value;
     });
 });
 
@@ -179,7 +179,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49506' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54549' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
