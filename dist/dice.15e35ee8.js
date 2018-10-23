@@ -137,19 +137,6 @@ document.querySelectorAll('.die').forEach(function (die) {
         percentile = event.target.attributes[3].value;
     });
 });
-
-//D12 Function
-
-
-//D10 Function
-
-//D% Function
-
-//D8 Function
-
-//D6 Function
-
-//D4 Function
 },{}],"..\\..\\..\\..\\AppData\\Roaming\\npm\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -179,7 +166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63838' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52993' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

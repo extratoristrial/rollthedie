@@ -31,16 +31,3 @@ function roll() {
         side = event.target.attributes.value.value
         percentile = event.target.attributes[3].value
     }))
-
-//D12 Function
-
-
-//D10 Function
-
-//D% Function
-
-//D8 Function
-
-//D6 Function
-
-//D4 Function
